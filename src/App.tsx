@@ -1,4 +1,4 @@
-import { Button, Card, Typography } from './components/ui'
+import { Button, Card, Checkbox, Typography } from './components/ui'
 
 export function App() {
   return (
@@ -7,6 +7,7 @@ export function App() {
       <div>
         <Typography variant={'large'}>What is Curriculum Development ? </Typography>
       </div>
+      <Checkbox />
       <Card />
     </div>
   )
