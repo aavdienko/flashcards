@@ -1,3 +1,4 @@
+import { DevTool } from '@hookform/devtools'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
@@ -38,6 +39,7 @@ export const SignIn = (props: Props) => {
         Sign In
       </Typography>
       <form onSubmit={handleSubmit(props.onSubmit)}>
+        <DevTool control={control} />
         <div className={s.fields}>
           <ControlledTextField name={'email'} control={control} label={'Email'} type={'email'} />
           <ControlledTextField
