@@ -1,12 +1,7 @@
-.root {
-  width: 420px;
-  height: 552px;
-
-  background-color: var(--color-bg-paper);
-  border: var(--color-border-primary);
-  border: 1px;
-  border-radius: 2px;
+.card {
+  background-color: var(--color-dark-700);
+  border: 1px solid #313131;
   box-shadow:
-    1px 1px 2px rgb(0 0 0 / 1%),
-    -1px -1px 2px rgb(0 0 0 / 1%);
+    1px 1px 2px 0 rgb(0 0 0 / 10%),
+    -1px -1px 2px 0 rgb(0 0 0 / 10%);
 }

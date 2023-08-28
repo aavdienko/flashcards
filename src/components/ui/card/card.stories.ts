@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Card } from '.'
+import { Card } from './'
 
 const meta = {
-  title: 'Components/Card',
+  title: 'Components/UI/Card',
   component: Card,
   tags: ['autodocs'],
 } satisfies Meta<typeof Card>
