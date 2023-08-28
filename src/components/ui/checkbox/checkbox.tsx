@@ -2,11 +2,10 @@ import { FC } from 'react'
 
 import * as CheckboxRadix from '@radix-ui/react-checkbox'
 
-import { Typography } from '../typography'
+import Check from '../../../assets/icons/check-box.tsx'
+import { Typography } from '../index.ts'
 
 import s from './checkbox.module.scss'
-
-import { Check } from '@/assets/icons'
 
 export type CheckboxProps = {
   checked?: boolean

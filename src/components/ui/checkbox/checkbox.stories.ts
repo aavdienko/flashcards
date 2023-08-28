@@ -1,11 +1,9 @@
-import { useState } from 'react'
-
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Checkbox } from '.'
+import { Checkbox } from './'
 
 const meta = {
-  title: 'Components/Checkbox',
+  title: 'Components/UI/Checkbox',
   component: Checkbox,
   tags: ['autodocs'],
 } satisfies Meta<typeof Checkbox>
@@ -27,12 +25,3 @@ export const WithoutLabel: Story = {
     disabled: false,
   },
 }
-// const CheckboxWithHook = () => {
-//   const [checked, setChecked] = useState(false)
-
-//   return (<Checkbox checked={checked} onChange={setChecked} label={'Click here'} />)
-// }
-
-// export const Controlled = {
-//   render: () => <CheckboxWithHook />,
-// }
