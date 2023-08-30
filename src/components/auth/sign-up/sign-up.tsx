@@ -3,8 +3,7 @@ import { useForm } from 'react-hook-form'
 import { Link, useNavigate } from 'react-router-dom'
 
 import s from './sign-up.module.scss'
-
-import { FormValues, signUpSchema } from './'
+import { signUpSchema, FormValues } from './sign-up.schema'
 
 import { Card, Typography, Button } from '@/components/ui'
 import { ControlledTextField } from '@/components/ui/controlled'
@@ -12,6 +11,8 @@ import { ControlledTextField } from '@/components/ui/controlled'
 type Props = {
   onSubmit: (data: Omit<FormValues, 'confirmPassword'>) => any
 }
+
+const BODY_2 = 'body2'
 
 export const SignUp = (props: Props) => {
   const navigate = useNavigate()
@@ -58,10 +59,10 @@ export const SignUp = (props: Props) => {
           <Typography variant={'subtitle2'}>Sign Up</Typography>
         </Button>
       </form>
-      <Typography variant={'body2'} as={'div'} className={s.caption}>
+      <Typography variant={BODY_2} as={'div'} className={s.caption}>
         Already have an account?
       </Typography>
-      <Typography variant={'body2'} as={Link} to="/sign-in" className={s.signInLink}>
+      <Typography variant={BODY_2} as={Link} to="/sign-in" className={s.signInLink}>
         Sign In
       </Typography>
     </Card>

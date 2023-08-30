@@ -2,7 +2,7 @@ import { ComponentPropsWithoutRef, FC } from 'react'
 
 import { RadioGroup as RadioGroupHeadless } from '@headlessui/react'
 
-import { Typography } from '..'
+import { Typography } from '../typography'
 
 import s from './radio-group.module.scss'
 
