@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import { Link, useNavigate } from 'react-router-dom'
 
 import s from './forgot-password.module.scss'
-import { FormValues, forgotPasswordSchema } from './forgot-password.scema'
+import { FormValues, forgotPasswordSchema } from './forgot-password.schema'
 
 import { Card, Typography, Button } from '@/components/ui'
 import { ControlledTextField } from '@/components/ui/controlled'

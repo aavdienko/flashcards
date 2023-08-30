@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import { BrowserRouter } from 'react-router-dom'
 
-import { FormValues, SignIn } from './'
+import { SignIn, FormValues } from './'
 
 const meta = {
   title: 'Components/AUTH/Sign-In',
