@@ -15,6 +15,8 @@ type CreateNewPasswordProps = {
   token?: string
 }
 
+const BODY_2 = 'body2'
+
 export const CreateNewPassword = (props: CreateNewPasswordProps) => {
   const navigate = useNavigate()
 
@@ -49,11 +51,11 @@ export const CreateNewPassword = (props: CreateNewPasswordProps) => {
             type={'password'}
             control={control}
           />
-          <Typography variant={'body2'} className={s.description}>
+          <Typography variant={BODY_2} className={s.description}>
             Create new password and we will send you further instructions to email
           </Typography>
           <Button fullWidth type={'submit'}>
-            <Typography variant={'body2'}>Create New Password</Typography>
+            <Typography variant={BODY_2}>Create New Password</Typography>
           </Button>
         </form>
       </Card>
