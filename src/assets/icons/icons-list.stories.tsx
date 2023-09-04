@@ -23,9 +23,9 @@ import {
   MoreVerticalOutline,
   CheckBox,
   Logo,
-  CheckEmail,
+  CheckEmailSVG,
   NotFound,
-} from '.'
+} from './'
 
 const meta = {
   title: 'Icons/Icons list',
@@ -241,7 +241,7 @@ export const CheckEmailIcon: Story = {
   args: {
     children: (
       <>
-        <CheckEmail />
+        <CheckEmailSVG />
       </>
     ),
   },
