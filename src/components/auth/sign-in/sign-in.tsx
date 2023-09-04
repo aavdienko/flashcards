@@ -6,6 +6,7 @@ import { z } from 'zod'
 
 import s from './sign-in.module.scss'
 
+import { BODY_2 } from '@/assets/common/consts'
 import { Button, Card, ControlledCheckbox, Typography } from '@/components/ui'
 import { ControlledTextField } from '@/components/ui/controlled'
 
@@ -57,10 +58,10 @@ export const SignIn = (props: Props) => {
           <Typography variant={'subtitle2'}>Sign In</Typography>
         </Button>
       </form>
-      <Typography variant={'body2'} as={'div'} className={s.caption}>
+      <Typography variant={BODY_2} as={'div'} className={s.caption}>
         Don&#39;t have an account?
       </Typography>
-      <Typography variant={'body2'} as={Link} to="/sign-up" className={s.signUpLink}>
+      <Typography variant={BODY_2} as={Link} to="/sign-up" className={s.signUpLink}>
         Sign Up
       </Typography>
     </Card>

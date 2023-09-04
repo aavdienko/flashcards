@@ -7,6 +7,7 @@ import s from './create-new-password.module.scss'
 
 import { createNewPasswordSchema, FormValues } from '.'
 
+import { BODY_2 } from '@/assets/common/consts'
 import { Card, Typography, Button } from '@/components/ui'
 import { ControlledTextField } from '@/components/ui/controlled'
 
@@ -14,8 +15,6 @@ type CreateNewPasswordProps = {
   onSubmit: (data: FormValues) => any
   token?: string
 }
-
-const BODY_2 = 'body2'
 
 export const CreateNewPassword = (props: CreateNewPasswordProps) => {
   const navigate = useNavigate()

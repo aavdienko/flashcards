@@ -5,14 +5,13 @@ import { Link, useNavigate } from 'react-router-dom'
 import s from './sign-up.module.scss'
 import { signUpSchema, FormValues } from './sign-up.schema'
 
+import { BODY_2 } from '@/assets/common/consts'
 import { Card, Typography, Button } from '@/components/ui'
 import { ControlledTextField } from '@/components/ui/controlled'
 
 type Props = {
   onSubmit: (data: Omit<FormValues, 'confirmPassword'>) => any
 }
-
-const BODY_2 = 'body2'
 
 export const SignUp = (props: Props) => {
   const navigate = useNavigate()

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 import s from './check-email.module.scss'
 
+import { BODY_2 } from '@/assets/common/consts'
 import { CheckEmailSVG } from '@/assets/icons'
 import { Card, Typography, Button } from '@/components/ui'
 
@@ -17,11 +18,11 @@ export const CheckEmail: FC<CheckEmailProps> = ({ email }) => {
       </Typography>
       <CheckEmailSVG className={s.emailImage} />
       <Typography
-        variant="body2"
+        variant={BODY_2}
         className={s.description}
       >{`We’ve sent an Email with instructions to ${email}`}</Typography>
       <Button as={Link} to={'/sign-in'} fullWidth>
-        <Typography variant="body2">Back to Sign in</Typography>
+        <Typography variant={BODY_2}>Back to Sign in</Typography>
       </Button>
     </Card>
   )

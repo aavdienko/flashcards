@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import s from './forgot-password.module.scss'
 import { FormValues, forgotPasswordSchema } from './forgot-password.schema'
 
+import { BODY_2 } from '@/assets/common/consts'
 import { Card, Typography, Button } from '@/components/ui'
 import { ControlledTextField } from '@/components/ui/controlled'
 
@@ -41,17 +42,17 @@ export const ForgotPassword = (props: Props) => {
       </Typography>
       <form onSubmit={handleSubmit(onSubmit)}>
         <ControlledTextField name={'email'} label={'Email'} type={'email'} control={control} />
-        <Typography variant={'body2'} as={'div'} className={s.description}>
+        <Typography variant={BODY_2} as={'div'} className={s.description}>
           Enter your email address and we will send you further instructions
         </Typography>
         <Button type={'submit'} fullWidth>
           <Typography variant={'subtitle2'}>Send Instructions</Typography>
         </Button>
       </form>
-      <Typography variant={'body2'} as={'div'} className={s.caption}>
+      <Typography variant={BODY_2} as={'div'} className={s.caption}>
         Do you remember your password?
       </Typography>
-      <Typography variant={'body2'} as={Link} to={'/sign-in'} className={s.signInLink}>
+      <Typography variant={BODY_2} as={Link} to={'/sign-in'} className={s.signInLink}>
         Try logging in
       </Typography>
     </Card>

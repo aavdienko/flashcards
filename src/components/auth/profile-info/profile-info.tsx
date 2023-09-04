@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import s from './profile-info.module.scss'
 import { ProfileSchemaType, profileSchema } from './profile-info.schema'
 
+import { BODY_2, SECONDARY } from '@/assets/common/consts'
 import { EditOutline, LogOutOutline } from '@/assets/icons'
 import { Card, Typography, Avatar, Button } from '@/components/ui'
 import { ControlledTextField } from '@/components/ui/controlled'
@@ -58,7 +59,7 @@ export const ProfileInfo: FC<ProfileInfoProps> = ({
             onChange={handleChangeAvatar}
             style={{ display: 'none' }}
           />
-          <Button variant="secondary" as={'span'} className={s.img}>
+          <Button variant={SECONDARY} as={'span'} className={s.img}>
             <EditOutline />
           </Button>
         </label>
@@ -68,10 +69,10 @@ export const ProfileInfo: FC<ProfileInfoProps> = ({
           <Typography variant="h1" className={s.name}>
             {name} <EditOutline onClick={handleChangeName} />
           </Typography>
-          <Typography variant="body2" className={s.email}>
+          <Typography variant={BODY_2} className={s.email}>
             {email}
           </Typography>
-          <Button variant="secondary" onClick={handleLogout} className={s.logoutBtn}>
+          <Button variant={SECONDARY} onClick={handleLogout} className={s.logoutBtn}>
             <LogOutOutline /> <Typography>Logout</Typography>
           </Button>
         </>
