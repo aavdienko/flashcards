@@ -1,6 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Button } from './'
+import { Button } from '.'
+
+import { Star } from '@/assets/icons'
 
 const meta = {
   title: 'Components/UI/Button',
@@ -60,6 +62,19 @@ export const AsLink: Story = {
   args: {
     variant: 'primary',
     children: 'Link that looks like a button',
+    as: 'a',
+  },
+}
+
+export const WithIcon: Story = {
+  args: {
+    variant: 'primary',
+    children: (
+      <>
+        <Star />
+        Icon
+      </>
+    ),
     as: 'a',
   },
 }

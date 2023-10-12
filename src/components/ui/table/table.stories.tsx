@@ -19,36 +19,42 @@ export const Default: Story = {
       <>
         <TableHeader>
           <TableRow>
-            <TableCell className={s.headCell}>Question</TableCell>
-            <TableCell className={s.headCell}>Answer</TableCell>
+            <TableCell className={s.headCell}>Name</TableCell>
+            <TableCell className={s.headCell}>Cards</TableCell>
             <TableCell className={s.headCell}>Last Updated</TableCell>
+            <TableCell className={s.headCell}>Created by</TableCell>
           </TableRow>
         </TableHeader>
         <TableBody>
           <TableRow>
-            <TableCell className={s.tableCell}>2+2?</TableCell>
+            <TableCell className={s.tableCell}>1</TableCell>
             <TableCell className={s.tableCell}>4</TableCell>
             <TableCell className={s.tableCell}>31.08.2023</TableCell>
+            <TableCell className={s.tableCell}>Alex A</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className={s.tableCell}>2-2?</TableCell>
+            <TableCell className={s.tableCell}>2</TableCell>
             <TableCell className={s.tableCell}>0</TableCell>
             <TableCell className={s.tableCell}>31.08.2023</TableCell>
+            <TableCell className={s.tableCell}>Alex A</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className={s.tableCell}>2*2t?</TableCell>
+            <TableCell className={s.tableCell}>3</TableCell>
             <TableCell className={s.tableCell}>4</TableCell>
             <TableCell className={s.tableCell}>31.08.2023</TableCell>
+            <TableCell className={s.tableCell}>Alex A</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className={s.tableCell}>2/2</TableCell>
+            <TableCell className={s.tableCell}>4</TableCell>
             <TableCell className={s.tableCell}>1</TableCell>
             <TableCell className={s.tableCell}>31.08.2023</TableCell>
+            <TableCell className={s.tableCell}>Alex A</TableCell>
           </TableRow>
           <TableRow>
-            <TableCell className={s.tableCell}>1+1</TableCell>
+            <TableCell className={s.tableCell}>5</TableCell>
             <TableCell className={s.tableCell}>2</TableCell>
             <TableCell className={s.tableCell}>31.08.2023</TableCell>
+            <TableCell className={s.tableCell}>Alex A</TableCell>
           </TableRow>
         </TableBody>
       </>
