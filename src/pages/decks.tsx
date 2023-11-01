@@ -1,4 +1,4 @@
-import { useGetDecksQuery } from '@/services/decks'
+import { useGetDecksQuery } from '@/services/decks/decks.api'
 
 export const Decks = () => {
   const { data } = useGetDecksQuery()
