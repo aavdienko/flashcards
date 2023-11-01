@@ -1,7 +1,7 @@
-import { useGetDecksQuery } from '@/services/decks/decks.api'
+// import { useGetDecksQuery } from '@/services/decks/decks.api'
 
-export const Decks = () => {
-  const { data } = useGetDecksQuery()
+// export const Decks = () => {
+//   const { data } = useGetDecksQuery()
 
-  return <div>{JSON.stringify(data || '')}</div>
-}
+//   return <div>{JSON.stringify(data || '')}</div>
+// }
