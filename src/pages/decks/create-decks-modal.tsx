@@ -4,6 +4,7 @@ import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 import { useSelector } from 'react-redux'
 
+import s from './decks.module.scss'
 import { NewDeck, newDeckSchema } from './new-deck.schema'
 
 import { BlankDeckCover, ImageOutline } from '@/assets/icons'
@@ -13,7 +14,6 @@ import { Modal } from '@/components/ui/modal'
 import { useMeQuery } from '@/services/auth/auth.api'
 import { useCreateDeckMutation } from '@/services/decks'
 import { decksSelectors } from '@/services/decks/decks-selectors'
-import s from 'pages/decks/decks.module.scss'
 
 type CreateDeckModalProps = {
   cover: File | null
