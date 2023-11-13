@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from 'react-router-dom'
 
-import { Decks } from './pages/decks'
+import { Decks } from './pages/decks/decks'
 
 function PrivateRoutes() {
   const isAuthenticated = false
