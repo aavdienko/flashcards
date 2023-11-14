@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
+import s from '../decks.module.scss'
+
 import { DeleteDeckModal } from './delete-deck-modal'
 import { UpdateDeckModal } from './update-deck-modal'
 
@@ -21,7 +23,6 @@ import {
   setOrderBy,
 } from '@/services/decks/decks.slice.ts'
 import { Deck } from '@/services/types.ts'
-import s from 'pages/decks/decks.module.scss'
 
 type DecksTableProps = {
   data: Deck[] | undefined

@@ -3,13 +3,14 @@ import { ChangeEvent, FC } from 'react'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { useForm } from 'react-hook-form'
 
+import s from '../decks.module.scss'
+
 import { UpdateDeck, updateDeckSchema } from './update-deck.schema'
 
 import { BlankDeckCover, EditOutline, ImageOutline } from '@/assets/icons'
 import { Button, ControlledCheckbox, Modal, Typography } from '@/components/ui'
 import { ControlledTextField } from '@/components/ui/controlled'
 import { useUpdateDeckMutation } from '@/services/decks'
-import s from 'pages/decks/decks.module.scss'
 
 type UpdateDeckModalProps = {
   deckId: string

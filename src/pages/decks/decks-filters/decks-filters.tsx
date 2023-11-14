@@ -2,6 +2,8 @@ import { ChangeEvent, FC, useState } from 'react'
 
 import { useSelector } from 'react-redux'
 
+import s from '../decks.module.scss'
+
 import { TrashOutline } from '@/assets/icons'
 import {
   Button,
@@ -21,7 +23,6 @@ import {
   setMinCardsCount,
   setSearchByName,
 } from '@/services/decks/decks.slice.ts'
-import s from 'pages/decks/decks.module.scss'
 
 type DecksFiltersProps = {
   searchValue: string
