@@ -1,0 +1,87 @@
+// @import 'src/styles/loader.module';
+
+.container {
+  width: 1008px;
+}
+
+.titleBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+  margin-bottom: 24px;
+}
+
+.deckName {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.table {
+  border-collapse: collapse;
+
+  width: 100%;
+  margin-top: 36px;
+  margin-bottom: 36px;
+
+  border: 1px solid var(--color-dark-500);
+}
+
+.tableCell {
+  padding: 6px 24px;
+  border-bottom: 1px solid var(--color-dark-500);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.coverCell {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.coverModal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 170px;
+  margin-bottom: 20px;
+
+  background-color: var(--color-dark-300);
+  border-radius: 2px;
+}
+
+.cover {
+  width: 120px;
+  height: 60px;
+  border-radius: 2px;
+}
+
+.img {
+  width: 100%;
+  max-height: 170px;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+.iconsBlock {
+  display: flex;
+  gap: 10px;
+  justify-content: end;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+  margin-top: 62px;
+}
