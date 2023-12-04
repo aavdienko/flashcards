@@ -16,15 +16,15 @@ const signInSchema = z.object({
   rememberMe: z.boolean().optional(),
 })
 
-type FormValues = z.infer<typeof signInSchema>
+export type signInFormValues = z.infer<typeof signInSchema>
 
 type Props = {
-  onSubmit: (data: FormValues) => void
+  onSubmit: (data: signInFormValues) => void
   isSubmitting?: boolean
 }
 
 export const SignIn = (props: Props) => {
-  const { handleSubmit, control } = useForm<FormValues>({
+  const { handleSubmit, control } = useForm<signInFormValues>({
     mode: 'onSubmit',
     resolver: zodResolver(signInSchema),
     defaultValues: {
