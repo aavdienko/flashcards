@@ -7,6 +7,7 @@ import { CardsTable } from './cards-table'
 import s from './cards.module.scss'
 import { CreateCardModal } from './create-card-modal'
 
+import { LARGE } from '@/assets/common/consts'
 import { useDebounce } from '@/assets/common/hooks/use-debounce'
 import {
   ArrowBackOutline,
@@ -106,7 +107,7 @@ export const Cards = () => {
       </Button>
       <div className={s.titleBlock}>
         <div className={s.deckName}>
-          <Typography variant="large">{deckName}</Typography>
+          <Typography variant={LARGE}>{deckName}</Typography>
           {cards?.length !== 0 && data2.id === authorId && (
             <Dropdown trigger={<MoreVerticalOutline />}>
               <>

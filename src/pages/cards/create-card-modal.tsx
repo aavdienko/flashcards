@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom'
 import s from './cards.module.scss'
 import { NewCard, newCardSchema } from './new-card.schema'
 
+import { SECONDARY, SUBTITLE_2 } from '@/assets/common/consts'
 import { BlankDeckCover, ImageOutline } from '@/assets/icons'
 import { Button, Typography } from '@/components/ui'
 import { ControlledTextField } from '@/components/ui/controlled'
@@ -66,9 +67,9 @@ export const CreateCardModal: FC<CreateCardModalProps> = ({
           )}
         </div>
         <label htmlFor="change-question" className={s.fileLabel}>
-          <Button as={'a'} variant="secondary" fullWidth>
+          <Button as={'a'} variant={SECONDARY} fullWidth>
             <ImageOutline />
-            <Typography as="span" variant="subtitle2">
+            <Typography as="span" variant={SUBTITLE_2}>
               Change Cover
             </Typography>
           </Button>
@@ -89,9 +90,9 @@ export const CreateCardModal: FC<CreateCardModalProps> = ({
           )}
         </div>
         <label htmlFor="change-answer" className={s.fileLabel}>
-          <Button as={'a'} variant="secondary" fullWidth>
+          <Button as={'a'} variant={SECONDARY} fullWidth>
             <ImageOutline />
-            <Typography as="span" variant="subtitle2">
+            <Typography as="span" variant={SUBTITLE_2}>
               Change Cover
             </Typography>
           </Button>
